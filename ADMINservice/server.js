@@ -3,7 +3,8 @@ const mongoose = require('./db');
 const path = require('path');
 const jwt = require('jsonwebtoken');
 
-const User = require(path.join(__dirname, '../../user&note/USERservice/user.model')); // Adjusted Path
+const Note = require('./note.model.js');
+const User = require('./user.model.js');
 require('dotenv').config();
 
 const app = express();
